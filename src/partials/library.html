@@ -1,0 +1,184 @@
+<header class="header header-library">
+  <div class="container container-libr">
+    <div class="toolbar">
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use href="./images/symbol-defs.svg#icon-sun"></use>
+        </svg>
+
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Переключить между тёмной и светлой темой"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="./images/symbol-defs.svg#icon-moon"></use>
+        </svg>
+      </div>
+    </div>
+    <nav class="header-content nav-library">
+      <a href="./index.html" class="header-logo animate__animated animate__bounce">
+        <svg class="logo-icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-logo"></use>
+        </svg>
+        <span class="span-header"> Filmoteka</span>
+      </a>
+
+      <ul class="right-side list">
+        <li class="header-item">
+          <a href="./index.html" class="header-link link">HOME</a>
+        </li>
+        <li class="header-item">
+          <a href="./library.html" class="current header-link link"
+            >MY LIBRARY</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="list header-buttons">
+      <li class="header-button">
+        <button type="button" class="btn active lib-watched-btn">
+          WATCHED
+        </button>
+      </li>
+      <li class="header-button">
+        <button type="button" class="btn lib-queue-btn">QUEUE</button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<section class="about">
+  <h1 class="visually-hidden">title</h1>
+  <div class="container">
+    <div class="movies">
+      <div class="root-show movies-grid" id="root">
+        <!-- <div class="movie-card">
+                 <img class="movie-img" src="./images/Rectangle 5.jpg" alt="card">
+            
+                 <div class="movie-info">
+                     <h2 class="movie-title">GREYHOUND</h2>
+                    <h3 class="span-title">Drama, Action <span class="span-bord">2020</span><span class="span-rejt">8.0</span></h3>
+                     </div>
+                 </div> -->
+      </div>
+      <div class="root-height movies-grid" id="root-queue"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-div">
+    <p class="footer-text">© 2022 | All Rights Reserved |&nbsp</p>
+    <p class="footer-text">
+      Developed with
+      <svg class="footer-icon" width="14" height="12">
+        <use href="./images/symbol-defs.svg#icon-heart"></use>
+      </svg>
+      <a class="footer-link" href="" data-modal-open>GoIt Students</a>
+    </p>
+    <div data-modal class="backdrop is-hidden">
+      <div class="our__team-modal">
+        <h3 class="our_team-title">Our team</h3>
+        <ul class="team_list">
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Kost-Oli.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Kostiantyn Oliinyk</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Olesya.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Olesya Laziun</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Antonina.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Antonina Bondar</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Oksana.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Oksana Semko</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Olex-Putn.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Oleksii Putnenko</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Taras.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Taras Shapovalov</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Yuliia-K.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Yuliia Kovalchuk</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="./images/modal-team/Alex.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Alex Sidorenko</p>
+          </li>
+          <li class="team_item">
+            <img
+              class="team_img"
+              src="https://i.pinimg.com/236x/82/37/5f/82375fa0115f41490b1129ad44794071--funny-minion-minions-quotes.jpg"
+              alt="img"
+            />
+            <p class="team_disc">Juliia Volokhovych</p>
+          </li>
+        </ul>
+        <button
+          type="button"
+          data-modal-close
+          class="close__modal"
+          title="Close modal"
+        >
+          <img
+            class="modal-svg"
+            src="./images/modal-team/svg-close.svg"
+            title="Close icon"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
